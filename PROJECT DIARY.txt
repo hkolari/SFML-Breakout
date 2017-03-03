@@ -23,6 +23,7 @@ Finally menu is done.
 18:40:
 Unable to get a moving playerpad to work. Frustrating.
 
-19:00: Ending for now.
+19:40: Managed to get a moving PlayerPad to work a background.
+Going to need to add a ball and barrier next time when I do programming. Ending the projekt for today. Or actually... Till now.
 
 ---------------------------------

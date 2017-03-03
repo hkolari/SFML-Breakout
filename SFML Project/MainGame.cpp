@@ -2,7 +2,7 @@
 
 
 
-MainGame::MainGame() : myPlayer()
+MainGame::MainGame()
 {
 	myBackgroundTexture.loadFromFile("../Resources/background1.jpg");
 	myBackgroundSprite.setTexture(myBackgroundTexture);
@@ -19,7 +19,7 @@ void MainGame::update(float dt)
 	//update ball, update playerpad
 }
 
-void MainGame::drawGame(sf::RenderTarget &target, sf::RenderStates states) const
+void MainGame::draw(sf::RenderTarget &target, sf::RenderStates states) const
 {
 	target.draw(myBackgroundSprite, states);
 	target.draw(myPlayer, states);

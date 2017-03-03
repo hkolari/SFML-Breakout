@@ -1,19 +1,20 @@
 #include <SFML/Graphics.hpp>
-//#include "Game.h"
 #include "Menu.h"
 #include "MainGame.h"
+#include <crtdbg.h>
 
 int main()
 {
+
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 	sf::RenderWindow window(sf::VideoMode(600, 600), "Breakout by Henry Kolari (PAACI16)!");
 	Menu mainMenu(window.getSize().x, window.getSize().y);
-	MainGame game; //TODO: Does not work for some reason.
+	MainGame game; //TODO: Does not work for some reason. 	//Game game;
 	window.setFramerateLimit(60);
 
-	//Game game;
 	sf::Clock gameTime;
 	int whichScreen = 0;		//0 = menu window, 1 = game window, 2 = high score window, 3 = exit/close window
-	int gottenChoice = 0;
 
 
 	while (window.isOpen())
@@ -29,10 +30,8 @@ int main()
 			}
 		}
 
-
-
-
 		window.clear();
+
 		if (whichScreen == 0)		//If main menu is still selected it will draw the menu
 		{
 			mainMenu.drawMenu(window);
@@ -40,16 +39,7 @@ int main()
 
 		if (whichScreen == 1)
 		{
-			/*
-			sf::Texture padTexture;
-			padTexture.loadFromFile("../resources/paddle.png");
-			sf::Sprite padSprite(padTexture);
-
-
-			window.draw(padSprite);
-			*/
-
-
+			window.draw(game);
 
 			game.update(gameTime.restart().asSeconds());
 		}
