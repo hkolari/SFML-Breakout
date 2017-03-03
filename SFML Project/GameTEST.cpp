@@ -2,7 +2,7 @@
 
 Game::Game() :mPlayer(1)
 {
-	if (mBackgroundTex.loadFromFile("../Resources/background.jpg"))
+	if (mBackgroundTex.loadFromFile("../Resources/background1.jpg"))
 	{
 		// Handle error
 	}

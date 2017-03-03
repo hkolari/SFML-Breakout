@@ -20,4 +20,9 @@ Got the menu controls working and threw them into menu.cpp and menu.h by the nam
 16:15:
 Finally menu is done.
 
+18:40:
+Unable to get a moving playerpad to work. Frustrating.
+
+19:00: Ending for now.
+
 ---------------------------------
