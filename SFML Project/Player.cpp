@@ -1,4 +1,4 @@
-#include "Player.hpp"
+#include "Player.h"
 
 Player::Player(int playerNumber)
 {
