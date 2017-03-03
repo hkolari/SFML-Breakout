@@ -47,8 +47,9 @@ void Menu::drawMenu(sf::RenderWindow &menuWindow)		//Draws whole Main Menu
 	}
 }
 
-void Menu::menuHandler(sf::Event event)
+int Menu::menuHandler(sf::Event event)
 {
+	int choice = 0;
 	switch (event.type)
 	{
 	case sf::Event::KeyReleased:
@@ -57,12 +58,14 @@ void Menu::menuHandler(sf::Event event)
 			case sf::Keyboard::Right:
 			{
 				moveRight();
+				choice = 0;
 				break;
 			}
 
 			case sf::Keyboard::Left:
 			{
 				moveLeft();
+				choice = 0;
 				break;
 			}
 
@@ -73,16 +76,19 @@ void Menu::menuHandler(sf::Event event)
 				case 0:
 				{
 					cout << "Play button has been pressed" << endl;
+					choice = 1;
 					break;
 				}
 				case 1:
 				{
 					cout << "High Score button has been pressed" << endl;
+					choice = 2;
 					break;
 				}
 				case 2:
 				{
 					cout << "Exit button has been pressed" << endl;
+					choice = 3;
 					break;
 				}
 					
@@ -91,6 +97,7 @@ void Menu::menuHandler(sf::Event event)
 			}
 		}
 	}
+	return choice;
 }
 
 void Menu::moveRight()

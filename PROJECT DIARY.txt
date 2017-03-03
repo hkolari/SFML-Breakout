@@ -17,4 +17,7 @@ Slight problems with with the selection. But it seems to work now.
 14:30:
 Got the menu controls working and threw them into menu.cpp and menu.h by the name of "handleMenuControls".
 
+16:15:
+Finally menu is done.
+
 ---------------------------------

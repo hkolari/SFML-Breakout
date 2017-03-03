@@ -9,7 +9,7 @@ public:
 	~Menu();
 
 	void drawMenu(sf::RenderWindow &menuWindow);
-	void menuHandler(sf::Event event);
+	int menuHandler(sf::Event event);
 	void moveRight();
 	void moveLeft();
 	int getSelectedBox() { return selectedBox; }

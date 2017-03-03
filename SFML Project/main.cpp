@@ -9,7 +9,9 @@ int main()
 
 	Game game;
 	sf::Clock gameTime;
-	int whichScreen = 0;		//0 = menu window, 1 = game window, 2 = high score window
+	int whichScreen = 0;		//0 = menu window, 1 = game window, 2 = high score window, 3 = exit/close window
+	int gottenChoice = 0;
+
 
 	while (window.isOpen())
 	{
@@ -18,12 +20,18 @@ int main()
 		{
 			if (whichScreen == 0)
 			{
-				mainMenu.menuHandler(event);		//Our menu controls that requires "event" variable to work. It returns a value, sometimes unrelevant due to controls.
-
+				whichScreen = mainMenu.menuHandler(event);		//Our menu controls that requires "event" variable to work. It returns a value, sometimes unrelevant due to controls.
+				if (whichScreen == 3)
+				{
+					window.close();
+				}
 			if (event.type == sf::Event::Closed)
 				window.close();
 			}
 		}
+
+
+
 
 		window.clear();
 		if (whichScreen == 0)		//If main menu is still selected it will draw the menu
