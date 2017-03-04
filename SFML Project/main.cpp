@@ -41,6 +41,10 @@ int main()
 		{
 			window.draw(game);
 			game.update(gameTime.restart().asSeconds());
+			if ((sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)))
+			{
+				window.close();
+			}
 		}
 
 		if (whichScreen == 2)

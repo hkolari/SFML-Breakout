@@ -7,7 +7,7 @@ class PlayerPad : public sf::Drawable
 public:
 	PlayerPad();
 	~PlayerPad();
-
+	sf::FloatRect getRect();
 	void update(float dt);
 
 private:
@@ -16,6 +16,8 @@ private:
 	float playerSpeed = 250.0f;
 
 	float myKeyFrameDuration;
+
+	
 
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 };

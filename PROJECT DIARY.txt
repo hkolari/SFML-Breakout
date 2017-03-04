@@ -33,3 +33,12 @@ Going to need to add a ball and barrier next time when I do programming. Ending 
 14:00:
 Began working on the project on 13:00 or so. I have now made my ball and it moves and positioned my current objects to their correct position.
 I will now experiment in putting an Entity that is connected by Ball and PlayerPad to share collission.
+
+19:45:
+Forgot to write diary. But What I have managed to do is make a simple collission between the ball and the playerpad.
+I have found a problem with collision if it collides with the side of my playerpad, it will still go up and not to sides.
+Will look if I can fix it somehow. Damn it, if only I had gone through Linjär Algebra already.
+
+20:50:
+No idea how to implement multiple bricks so I won't need to create more classes.
+Will continue tomorrow though. I have not eaten anything. Done for now.
