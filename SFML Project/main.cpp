@@ -40,7 +40,6 @@ int main()
 		if (whichScreen == 1)
 		{
 			window.draw(game);
-
 			game.update(gameTime.restart().asSeconds());
 		}
 

@@ -13,7 +13,7 @@ public:
 private:
 	sf::Texture playerTexture;
 	sf::Sprite playerSprite;
-	float playerSpeed = 180.0f;
+	float playerSpeed = 250.0f;
 
 	float myKeyFrameDuration;
 

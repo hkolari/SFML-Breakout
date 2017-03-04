@@ -1,20 +1,23 @@
 #ifndef BALL_H
 #define BALL_H
-
 #include <SFML\Graphics.hpp>
 
-class Ball
+class Ball : public sf::Drawable
 {
-
 public:
 	Ball();
 	~Ball();
 
+	void update(float dt);
+
 private:
 	sf::Texture myBallTexture;
-	float mySpeed = 180.0f;
+	sf::Sprite myBallSprite;
+	float ballSpeed = 180.0f;
 
-	void drawCircle(sf::RenderTarget &target, sf::RenderStates states) const;
+	float myKeyFrameDuration;
+
+	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;
 };
 
-#endif // !BALL_H
+#endif

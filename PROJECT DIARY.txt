@@ -27,3 +27,9 @@ Unable to get a moving playerpad to work. Frustrating.
 Going to need to add a ball and barrier next time when I do programming. Ending the projekt for today. Or actually... Till now.
 
 ---------------------------------
+
+04.03.2017
+---------------------------------
+14:00:
+Began working on the project on 13:00 or so. I have now made my ball and it moves and positioned my current objects to their correct position.
+I will now experiment in putting an Entity that is connected by Ball and PlayerPad to share collission.
