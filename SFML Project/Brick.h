@@ -21,6 +21,7 @@ public:
 	void setBrickPosX(float brickPosX);
 	void setBrickPosY(float brickPosY);
 
+	void update(float dt);
 	void buildBrick();
 
 private:
@@ -28,8 +29,8 @@ private:
 	float brickPosX;
 	float brickPosY;
 
-	sf::Texture brickTexture;
-	sf::Sprite brickSprite;
+	sf::Texture *brickTexture;
+	sf::Sprite *brickSprite;
 
 
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;

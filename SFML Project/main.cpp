@@ -15,10 +15,9 @@ int main()
 	Menu mainMenu(window.getSize().x, window.getSize().y);
 	MainGame game; //TODO: Does not work for some reason. 	//Game game;
 	window.setFramerateLimit(60);
-
+	myLevel->addBrick(50, 45);
 	sf::Clock gameTime;
 	int whichScreen = 0;		//0 = menu window, 1 = game window, 2 = high score window, 3 = exit/close window
-	myLevel->addBrick(50, 45);
 
 	while (window.isOpen())
 	{

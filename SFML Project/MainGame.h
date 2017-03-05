@@ -19,6 +19,7 @@ private:
 	PlayerPad myPlayer;
 	Ball myBall;
 	Brick myBrick;
+	Level myLevel;
 	
 
 	virtual void draw(sf::RenderTarget &target, sf::RenderStates states) const;

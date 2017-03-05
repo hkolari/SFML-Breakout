@@ -15,6 +15,16 @@ Level::Level(const Level & origObj)
 	this->bricks = new Brick*[origObj.capacity];
 }
 
+Level & Level::operator=(const Level &ref)
+{
+	this->amountOfBricks = ref.amountOfBricks;
+	this->capacity = ref.capacity;
+
+	delete[] this->bricks;
+
+	return *this;
+}
+
 
 Level::~Level()
 {

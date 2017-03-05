@@ -14,12 +14,14 @@ public:
 	void removeBrick();
 	int getNrOfBricks() const;
 
+	Level &operator=(const Level &ref);
+
+	void expand();
+
 private:
 	int amountOfBricks;
 	int capacity;
 	Brick* *bricks;
-
-	void expand();
 
 };
 
