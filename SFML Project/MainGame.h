@@ -4,7 +4,7 @@
 #include <SFML\Graphics.hpp>
 #include "PlayerPad.h"
 #include "Ball.h"
-#include "Brick.h"
+#include "Level.h"
 
 class MainGame : public sf::Drawable
 {

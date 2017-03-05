@@ -42,3 +42,16 @@ Will look if I can fix it somehow. Damn it, if only I had gone through Linjär Al
 20:50:
 No idea how to implement multiple bricks so I won't need to create more classes.
 Will continue tomorrow though. I have not eaten anything. Done for now.
+
+---------------------------------
+05.03.2017
+---------------------------------
+13:00:
+Time to continue with my project. I will aim for today to get some sort of a "addBrick" function to the game where I give it the position and perhaps even size.
+This is to create the levels itself.
+
+14:40:
+Problems with the "addBrick" thing. It gets the values, but it doesn't apply it for some reason. No idea what the problem is.
+
+15:30:
+No idea what to do. Going to take a small break

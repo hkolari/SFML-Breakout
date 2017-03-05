@@ -3,8 +3,11 @@
 #include "MainGame.h"
 #include <crtdbg.h>
 
+#include "Level.h"
+
 int main()
 {
+	Level* myLevel = new Level(2);
 
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
@@ -15,7 +18,7 @@ int main()
 
 	sf::Clock gameTime;
 	int whichScreen = 0;		//0 = menu window, 1 = game window, 2 = high score window, 3 = exit/close window
-
+	myLevel->addBrick(50, 45);
 
 	while (window.isOpen())
 	{
@@ -60,5 +63,6 @@ int main()
 		window.display();
 	}
 
+	delete myLevel;
 	return 0;
 }
